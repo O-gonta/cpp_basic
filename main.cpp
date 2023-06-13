@@ -1,7 +1,7 @@
 #include<iostream>
-
+#include <stdio.h>
+#define _NO_CRT_STDIO_INLINE 
 using namespace std;
-
 
     int main()
     {
@@ -20,12 +20,14 @@ using namespace std;
         cout << "b   " << b << "  size   " << sizeof(b) << "  address   " << hex << &b << endl;
         cout << "c   " << c << "  size   " << sizeof(c) << "  address   " << hex << &c << endl;
         cout << "d   " << d << "  size   " << sizeof(d) << "  address   " << hex << (void*)&d << endl;
+        cout << endl;
 
-        /*******************************************
-        sizeof演算子の使用方法
-        sizeof(int)	   ← int型のサイズを取得
-        sizeof(a)	   ← 変数aのサイズを取得
-        *********************************************/
+        printf( "%d\t%d\t0x%x\n", a, sizeof(a),  &a);
+        printf( "%f\t%d\t0x%x\n", b, sizeof(b), &b);
+        printf( "%f\t%d\t0x%x\n" , c, sizeof(c), &c);
+        printf( "%s\t%d\t0x%x\n", d, sizeof(d), (void *)&d);
+
+        
 
 	system("pause>0");
 
