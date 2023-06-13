@@ -5,14 +5,16 @@ using namespace std;
 
     int main()
     {
-        int a = 100;        //  int型の変数
-        double b = 123.4;   //  double型の変数
-        float c = 123.4f;   //  float型の変数(数値の後ろにfつける)
-        char d = 'a';       //  char型の変数
-        printf("aの値は%d、大きさは%dbyte、アドレスは0x%X\n", a, sizeof(a), (unsigned int)&a);
-        printf("bの値は%f、大きさは%dbyte、アドレスは0x%X\n", b, sizeof(b), (unsigned int)&b);
-        printf("cの値は%f、大きさは%dbyte、アドレスは0x%X\n", c, sizeof(c), (unsigned int)&c);
-        printf("dの値は%c、大きさは%dbyte、アドレスは0x%X\n", d, sizeof(d), (unsigned int)&d);
+        int a = 100;        
+        double b = 123.4;  
+        float c = 123.4f;
+        char d = 'a'; 
+    
+        cout << "a   " << a << "  size   " << sizeof(a) << "  address   " << &a << endl;
+        cout << "b   " << b << "  size   " << sizeof(b) << "  address   " << &b << endl;
+        cout << "c   " << c << "  size   " << sizeof(c) << "  address   " << &c << endl;
+        cout << "d   " << d << "  size   " << sizeof(d) << "  address   " << (void *) &d << endl;
+
 
         /*******************************************
         sizeof演算子の使用方法
